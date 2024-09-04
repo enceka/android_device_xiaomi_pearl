@@ -1,4 +1,3 @@
-Copyright (C) 2023 LineageOS
 # Device tree for Redmi Note 12T Pro (pearl)
 The Redmi Note 12T Pro (codenamed _"pearl"_) is a high-end, mid-range smartphone from Xiaomi.
 
@@ -20,4 +19,4 @@ Display | 1080 x 2460 pixels, 6.6 inches, Dobly Vision, IPS LCD
 ## Device picture
 ![Redmi Note 12T Pro](https://cdn.dxomark.com/wp-content/uploads/medias/post-143658/Xiaomi-Redmi-Note-12-Pro-5G_featured-image-packshot-review-Recovered.jpg)
 
-Tree based on work of @wbs306 - all credits belong to him.
+Tree based on work of @wbs306 - (mainly credits belong to him) and pearl-developments

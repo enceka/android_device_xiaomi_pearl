@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">温控配置</string>
+    <string name="thermal_summary">调整每个应用使用的温控文件以获得最体验</string>
+    <string name="thermal_default">默认</string>
+    <string name="thermal_benchmark">性能</string>
+    <string name="thermal_browser">浏览器</string>
+    <string name="thermal_camera">相机</string>
+    <string name="thermal_dialer">电话</string>
+    <string name="thermal_gaming">游戏</string>
+    <string name="thermal_streaming">流媒体</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">扬声器清理</string>
+    <string name="clear_speaker_summary">开启后，自动播放30s音频清理扬声器出音孔灰尘</string>
+    <string name="clear_speaker_description">功能说明：\n\n    1.当出现轻微堵孔时，建议执行该功能一到两次;\n\n    2.当出现严重堵孔时，建议执行该功能两到五次，同时完成手握手机向下甩的动作</string>
+
+    <!-- Refresh rate -->
+    <string name="refresh_title">刷新率设置</string>
+    <string name="refresh_summary">设置特定应用的最大刷新率</string>
+    <string name="refresh_default">默认</string>
+    
+    <!-- GPU -->
+    <string name="gpu_title">GPU FAS 调度器</string>
+    <string name="gpu_title_enable">启用 GPU FAS</string>
+    <string name="gpu_summary">控制您的设备如何使用 GPU</string>
+    <string name="gpu_description">FAS：根据当前活动调度 GPU，优化性能和高负载场景的功耗.\n\n禁用：禁用任何类型的 GPU 修复，这可以节省电池寿命，但也会影响您使用需要大图形渲染的应用程序(游戏).\n\n\n注意：不幸的是，所有类型的GPU修复都有低温（25°C 及以下）引起的随机重启，因此您可以自己控制开关 GPU FAS.</string>
+</resources>

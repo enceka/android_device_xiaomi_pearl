@@ -1,0 +1,4 @@
+# Log
+persist.sys.mdlog_dumpback=2
+persist.vendor.mdlog.max_dump_file_count=10,*.muxz,*.bin
+persist.vendor.mdlog.need_dump=1

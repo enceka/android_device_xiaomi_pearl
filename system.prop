@@ -1,0 +1,123 @@
+# Audio
+ro.audio.silent=0
+ro.audio.usb.period_us=16000
+ro.camera.sound.forced=0
+
+# Blur
+ro.launcher.blur.appLaunch=0
+ro.sf.blurs_are_expensive=0
+ro.surface_flinger.supports_background_blur=1
+
+# Brand
+Build.BRAND=MTK
+
+# Camera
+persist.camera.HAL3.enabled=1
+persist.camera.eis.enabled=1
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.lineageos.aperture
+ro.camera.sound.forced=0
+vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.lineageos.aperture
+
+# Charger
+ro.charger.enable_suspend=true
+
+# Dexopt
+dalvik.vm.dex2oat64.enabled=true
+
+# Disable MTE Async for system server
+arm64.memtag.process.system_server=off
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# Feature flags
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
+# IPO
+sys.ipo.disable=1
+sys.ipo.pwrdncap=2
+
+# Iorapd
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+ro.iorapd.enable=false
+
+# Kernel
+ro.kernel.zio=38,108,105,16
+
+# Perf
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# LMKD
+ro.config.low_ram=false
+
+# Logcat
+persist.log.tag.gralloc4=S   
+persist.log.tag.AnalyticsService=S
+persist.log.tag.KernelCpuUidActiveTimeReader=S
+persist.log.tag.Tracer=S
+persist.log.tag.NearbySharing=S
+persist.log.tag.IntervalStats=S
+persist.log.tag.CompatibilityChangeReporter=S
+persist.log.tag.SQLiteLog=S
+persist.log.tag.wificond=S
+persist.log.tag.b/223498680=S
+persist.log.tag.TrafficStats=S
+persist.log.tag.ContrastColorUtil=S
+persist.log.tag.OpenGLRenderer=S
+
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# MiuiCamera
+ro.miui.notch=1
+ro.product.mod_device=pearl
+camera.lab.options=true
+
+# USB
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+
+# VoLTE
+persist.dbg.allow_ims_off=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# WiFi
+mediatek.wlan.ctia=0
+ro.mediatek.wlan.p2p=1
+ro.mediatek.wlan.wsc=1
+wifi.direct.interface=p2p0
+wifi.interface=wlan0
+wifi.tethering.interface=ap0
+
+# RIL
+vendor.rild.libargs=-d /dev/ttyC0
+vendor.rild.libpath=mtk-ril.so
+
+# Radio
+persist.sys.radio.force_lte_ca=true
+
+# Ram Improvement
+ro.config.dha_cached_max=16
+ro.config.dha_empty_init=32
+ro.config.dha_empty_max=42
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.fha_enable=true
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+ro.sys.fw.bg_apps_limit=32
+
+# Render
+debug.cpurend.vsync=false
+
+# Zygote
+ro.zygote.preload.enable=0

@@ -95,7 +95,7 @@ BOARD_DTB_OFFSET := 0x07c88000
 BOARD_VENDOR_CMDLINE := bootopt=64S3,32N2,64N2
 
 # SELiunx
-BOARD_BOOTCONFIG := androidboot.selinux=permissive
+BOARD_BOOTCONFIG := androidboot.selinux=enforcing
 
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --vendor_cmdline $(BOARD_VENDOR_CMDLINE)

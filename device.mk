@@ -41,7 +41,7 @@ $(eval PRODUCT_COPY_FILES += \
 
 # Rootdir
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/init.pearl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.pearl.rc
+    init.pearl.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \

@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+prebuilt_etc {
+    name: "init.pearl.rc",
+    src: "init.pearl.rc",
+    sub_dir: "init",
+    vendor: true,
+}

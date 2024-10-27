@@ -17,3 +17,6 @@ BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) $(BO
 
 # Display
 TARGET_SCREEN_DENSITY := 392
+
+# Inherit the proprietary files
+include vendor/xiaomi/pearl/BoardConfigVendor.mk

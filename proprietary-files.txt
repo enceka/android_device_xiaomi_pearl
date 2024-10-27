@@ -1,10 +1,3 @@
-# ADSP modules
-vendor/lib/rfsa/adsp/libSuperSensor_skel.so
-
-# Apply patch
-vendor/bin/applypatch
-vendor/lib64/libz_stable.so
-
 # Audio
 vendor/bin/audiocmdservice_atci
 vendor/bin/mt6660_calibration

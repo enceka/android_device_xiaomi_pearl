@@ -21,3 +21,6 @@ PRODUCT_COPY_FILES += \
 
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/xiaomi/pearl/pearl-vendor.mk)

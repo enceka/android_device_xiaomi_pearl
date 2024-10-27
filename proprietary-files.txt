@@ -2203,6 +2203,7 @@ vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/init.connfem.rc
 vendor/etc/init/init.conninfra.rc
+-system_ext/lib64/libfmjni.so:system/lib64/libfmjni.so
 vendor/etc/init/init.fmradio_drv.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/md_monitor.rc

@@ -14,3 +14,10 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Rootdir
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/init.pearl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.pearl.rc
+
+# Shipping API Level
+PRODUCT_SHIPPING_API_LEVEL := 31

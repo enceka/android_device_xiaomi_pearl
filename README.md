@@ -19,4 +19,4 @@ Display | 1080 x 2460 pixels, 6.6 inches, Dobly Vision, IPS LCD
 ## Device picture
 ![Redmi Note 12T Pro](https://cdn.dxomark.com/wp-content/uploads/medias/post-143658/Xiaomi-Redmi-Note-12-Pro-5G_featured-image-packshot-review-Recovered.jpg)
 
-Tree based on work of @wbs306  \ @pearl-developments \ @UzLung1435
+Tree based on work of @wbs306  \ @pearl-developments \ @UzLung1435 \ @xiaomi-mediatek-devs

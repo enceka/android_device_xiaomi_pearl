@@ -115,6 +115,7 @@ vendor/firmware/tfa98xx.cnt
 system/etc/audio_effects.conf:etc/audio_effects.conf
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
+vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
 vendor/etc/device_sar_config.xml
 vendor/etc/factory.ini

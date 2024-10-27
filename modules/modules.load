@@ -2,9 +2,6 @@
 adapter_class.ko
 adsp-v2.ko
 adsp.ko
-aee_aed.ko
-aee_hangdet.ko
-aee_rs.ko
 ak7375c.ko
 ak7377a.ko
 apu_top.ko
@@ -15,7 +12,6 @@ atf_logger.ko
 audio_ipi.ko
 ax88179_178a.ko
 backlight_cooling.ko
-binder_gki.ko
 blocktag.ko
 board_temp.ko
 bootprof.ko
@@ -120,7 +116,6 @@ industrialio-triggered-buffer.ko
 iommu_debug.ko
 iommu_secure.ko
 iommu_test.ko
-irq-dbg.ko
 jpeg-driver.ko
 kfifo_buf.ko
 ktd2687.ko
@@ -160,16 +155,7 @@ mi-memory.ko
 mi_log.ko
 mi_page_pool.ko
 mi_thermal_interface.ko
-millet_binder.ko
-millet_core.ko
-millet_hs.ko
-millet_oem_cgroup.ko
-millet_pkg.ko
-millet_sig.ko
-minet.ko
 mitee.ko
-miwill.ko
-miwill_mode_redudancy.ko
 mkp.ko
 mmprofile.ko
 mmqos-common.ko
@@ -178,8 +164,6 @@ modules.alias
 modules.dep
 modules.load
 modules.softdep
-monitor_hang.ko
-mrdump.ko
 msync2_frd.ko
 mt6315-regulator.ko
 mt6363-regulator.ko
@@ -292,7 +276,6 @@ mtk_pd_charging.ko
 mtk_pep.ko
 mtk_pep20.ko
 mtk_pep40.ko
-mtk_printk_ctrl.ko
 mtk_qos.ko
 mtk_rpmsg_mbox.ko
 mtk_sec_heap.ko
@@ -370,7 +353,6 @@ thermal-generic-adc.ko
 thermal_interface.ko
 thermal_trace.ko
 tinysys-scmi.ko
-trace_mmstat.ko
 trusted_mem.ko
 ufs-mediatek-dbg.ko
 ufs-mediatek-mod.ko

@@ -8,3 +8,6 @@ DEVICE_PATH := device/xiaomi/pearl
 
 # Inherit from mt6895-common
 include device/xiaomi/mt6895-common/BoardConfigCommon.mk
+
+# Display
+TARGET_SCREEN_DENSITY := 392

@@ -253,6 +253,7 @@
         <item>988.0</item>
         <item>1000.0</item>
     </array>
+
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
          This array should be equal in size to config_screenBrightnessBacklight. -->
@@ -260,6 +261,7 @@
         <item>1</item>
         <item>255</item>
     </array>
+
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
          values in the config_screenBrightnessBacklight array.  On OLED displays these  values
          should be measured with an all white image while the display is in the fully on state.
@@ -270,6 +272,7 @@
         <item>4.5</item>
         <item>1000</item>
     </array>
+
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
          percent. The length of this array is assumed to be one greater than
          config_screenThresholdLevels. The brightening threshold is calculated as
@@ -279,6 +282,7 @@
     <integer-array name="config_screenBrighteningThresholds">
         <item>0</item>
     </integer-array>
+
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
          percent. The length of this array is assumed to be one greater than
          config_screenThresholdLevels. The darkening threshold is calculated as
@@ -288,31 +292,38 @@
     <integer-array name="config_screenDarkeningThresholds">
         <item>0</item>
     </integer-array>
+
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">100%</fraction>
+
     <!-- Default screen brightness setting set.
          -2 is invalid so setting will resort to int value specified above.
          Must be in the range specified by minimum and maximum. -->
     <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.074743524</item>
+
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
          Set this to 1.0 for maximum brightness range.
          The user is forbidden from setting the brightness above this level. -->
     <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
+
     <!-- Minimum screen brightness setting allowed by power manager.
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
     <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.001709819</item>
+
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
     <item name="config_screenBrightnessDimFloat" format="float" type="dimen">0.003663898</item>
+
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
     <integer name="config_screenBrightnessDoze">5</integer>
+
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
          when adapting to brighter or darker environments.  This parameter controls how quickly
@@ -326,6 +337,7 @@
         <item>0</item>
         <item>10</item>
     </integer-array>
+
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
@@ -351,7 +363,10 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string name="config_mainBuiltInDisplayCutout" translatable="false">M 0,0 H -36 V 100 H 36 V 0 H 0 Z</string>
+
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">
+        M 0,0 H -36 V 100 H 36 V 0 H 0 Z
+    </string>    
 
     <!-- The default peak refresh rate for a given device. Change this value if you want to prevent
          the framework from using higher refresh rates, even if display modes with higher refresh

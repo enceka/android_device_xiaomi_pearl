@@ -7,7 +7,7 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_pearl.mk
 
-COMMON_LUNCH_CHOICES := \
-    lineage_pearl-user \
-    lineage_pearl-userdebug \
-    lineage_pearl-eng
+#COMMON_LUNCH_CHOICES := \
+#    lineage_pearl-user \
+#    lineage_pearl-userdebug \
+#    lineage_pearl-eng

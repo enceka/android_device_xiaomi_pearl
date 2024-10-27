@@ -72,7 +72,6 @@ connfem.ko
 conninfra.ko
 connscp.ko
 cpudvfs.ko
-cpufreq_sugov_ext.ko
 cpuqos_v3.ko
 cqhci.ko
 dbgtop-drm.ko
@@ -95,8 +94,6 @@ fhctl.ko
 flashlight.ko
 fmradio_drv_connac2x.ko
 fpc1022_tee.ko
-fpsgo.ko
-frs.ko
 ged.ko
 gps_drv_dl_v050.ko
 gps_pwr.ko
@@ -135,7 +132,6 @@ leds-mtk-disp.ko
 leds-mtk-pwm.ko
 leds-mtk.ko
 lm3644.ko
-load_track.ko
 log_store.ko
 mac80211.ko
 mali_kbase_mt6895.ko
@@ -270,13 +266,11 @@ mtk_chg_type_det.ko
 mtk_cm_ipi.ko
 mtk_cm_mgr.ko
 mtk_cm_mgr_mt6895.ko
-mtk_core_ctl.ko
 mtk_cpu_power_throttling.ko
 mtk_dcm.ko
 mtk_disp_notify.ko
 mtk_dramc.ko
 mtk_dynamic_loading_throttling.ko
-mtk_fpsgo.ko
 mtk_gpu_hal.ko
 mtk_gpu_qos.ko
 mtk_gpufreq_mt6895.ko
@@ -298,8 +292,6 @@ mtk_pd_charging.ko
 mtk_pep.ko
 mtk_pep20.ko
 mtk_pep40.ko
-mtk_perf_common.ko
-mtk_perf_ioctl.ko
 mtk_printk_ctrl.ko
 mtk_qos.ko
 mtk_rpmsg_mbox.ko
@@ -346,7 +338,6 @@ rt6160-regulator.ko
 rt_pd_manager.ko
 rtc-mt6685.ko
 sc8551.ko
-scheduler.ko
 scp.ko
 sec-rng.ko
 sec.ko
@@ -370,7 +361,6 @@ spmtwam.ko
 sspm_v3.ko
 syscon-reboot-mode.ko
 system_heap.ko
-task_turbo.ko
 tcpc_class.ko
 tcpc_mt6375.ko
 tcpci_late_sync.ko
@@ -384,7 +374,6 @@ trace_mmstat.ko
 trusted_mem.ko
 ufs-mediatek-dbg.ko
 ufs-mediatek-mod.ko
-uload_ind.ko
 us_prox_iio.ko
 usb_boost.ko
 usb_dp_selector.ko

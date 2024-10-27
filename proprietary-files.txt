@@ -1974,7 +1974,7 @@ vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc
 vendor/etc/1-SN1X0_SPC.txt
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/libnxpsmartpaparser.so
-vendor/lib/libsn100u_fw.so
+#vendor/lib/libsn100u_fw.so
 vendor/lib/nfc_nci.nqx.default.hw.v1.so
 vendor/lib/vendor.nxp.hardware.nfc@2.0.so
 vendor/lib64/libnxp_extamp_intf.so

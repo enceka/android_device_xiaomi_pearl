@@ -434,7 +434,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.pearl-multihal
 
 # Shipping API level
-#PRODUCT_SHIPPING_API_LEVEL := 31
+PRODUCT_SHIPPING_API_LEVEL := 31
 #BOARD_SHIPPING_API_LEVEL := 31
 #BOARD_API_LEVEL := 31
 

@@ -28,6 +28,7 @@ ro.vendor.audio.soundtrigger.wakeupword=5
 ro.vendor.audio.spk.stereo=true
 ro.vendor.audio.surround.support=true
 ro.vendor.audio.us.proximity=true
+#ro.vendor.audio.us.proximity_waitfornegative_feature=true
 ro.vendor.audio.vocal.support=true
 ro.vendor.audio.voice.change.support=true
 ro.vendor.audio.voice.change.youme.support=true

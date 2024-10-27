@@ -1,2 +1,0 @@
-allow mtk_hal_pq vendor_sysfs_displayfeature:dir { read open search };
-allow mtk_hal_pq vendor_sysfs_displayfeature:file { read getattr open };

@@ -1,7 +1,0 @@
-type mtk_hal_audio;
-
-allow mtk_hal_audio persist_data_file:dir { search };
-allow mtk_hal_audio persist_data_file:file { getattr open read };
-
-# Purpose : adsp
-allow mtk_hal_audio adsp_device:chr_file { rw_file_perms };

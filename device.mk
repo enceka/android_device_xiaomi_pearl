@@ -38,6 +38,10 @@ $(eval PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.pearl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.pearl.rc
 
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
 

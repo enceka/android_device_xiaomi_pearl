@@ -9,7 +9,8 @@ $(call inherit-product, device/xiaomi/mt6895-common/mt6895.mk)
 
 # Overlay
 PRODUCT_PACKAGES += \
-    FrameworksResPearl
+    FrameworksRes \
+    NfcOverlay
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

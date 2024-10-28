@@ -37,7 +37,6 @@ vendor/etc/misound_res_headphone.bin
 vendor/etc/misound_res_spk.bin
 
 # Audio Hardware
-vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.mt6895.so
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libmisound.so
@@ -513,7 +512,6 @@ vendor/etc/cust_color.xml
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.default.so
 
-
 # FM Radio
 vendor/etc/init/init.fmradio_drv.rc
 
@@ -528,11 +526,9 @@ vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 
 # Sensors
 vendor/etc/elliptic_sensor.xml
-vendor/lib64/hw/sensors.dynamic_sensor_hal.so
 vendor/lib64/hw/sensors.elliptic@2.0.so
 vendor/lib64/hw/sensors.mt6895.so
 vendor/lib64/libnotifyaudiohal.so
-
 
 # Thermal (Xiaomi)
 vendor/bin/mi_thermald

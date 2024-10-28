@@ -40,7 +40,7 @@ $(eval PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/com.nxp.mifare.xml)
 
 # Rootdir
-PRODUCT_COPY_FILES += \
+PRODUCT_PACKAGES += \
     init.pearl.rc
 
 # Sensors

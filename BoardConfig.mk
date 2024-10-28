@@ -22,7 +22,7 @@ TARGET_SCREEN_DENSITY := 392
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest_pearl.xml
 
 # Platform
-BOARD_HAVE_MTK_FM := true
+#BOARD_HAVE_MTK_FM := true
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop

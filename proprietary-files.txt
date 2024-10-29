@@ -332,7 +332,7 @@ vendor/lib64/libai_sdr2hdr.so
 vendor/lib64/libai_sdr2hdr_auth.so
 vendor/lib64/libaispq.so
 vendor/lib64/libalCFR.so
-vendor/lib64/libalhLDC.so
+vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libanc_calibration_parser.so
 vendor/lib64/libanc_supervq.so
 vendor/lib64/libarcbokeh.preview.so
@@ -510,7 +510,7 @@ vendor/etc/init/hw/init.project.rc
 vendor/etc/cust_color.xml
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.fpc.default.so
+vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
 
 # FM Radio
 vendor/etc/init/init.fmradio_drv.rc
@@ -528,7 +528,7 @@ vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 vendor/etc/elliptic_sensor.xml
 vendor/lib64/hw/sensors.elliptic@2.0.so
 vendor/lib64/hw/sensors.mt6895.so
-vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME
 
 # Thermal (Xiaomi)
 vendor/bin/mi_thermald

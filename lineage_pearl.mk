@@ -24,9 +24,9 @@ PRODUCT_SYSTEM_NAME := pearl
 PRODUCT_SYSTEM_DEVICE := pearl
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="pearl-user 12 SP1A.210812.016 V816.0.3.0.ULOCNXM release-keys" \
+    PRIVATE_BUILD_DESC="pearl-user 12 SP1A.210812.016 V816.0.5.0.ULHCNXM release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := Redmi/pearl/pearl:12/SP1A.210812.016/V816.0.3.0.ULHCNXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/pearl/pearl:12/SP1A.210812.016/V816.0.5.0.ULHCNXM:user/release-keys

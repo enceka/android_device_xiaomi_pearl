@@ -1,4 +1,3 @@
-mkp.ko
 bootprof.ko
 dbgtop-drm.ko
 irq-dbg.ko
@@ -187,7 +186,6 @@ gpu_plaid.ko
 xiaomi_touch.ko
 nvt36672c.ko
 double_click.ko
-mkp.ko
 bootprof.ko
 dbgtop-drm.ko
 irq-dbg.ko

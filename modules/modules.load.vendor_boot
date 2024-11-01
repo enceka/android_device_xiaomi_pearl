@@ -1,4 +1,3 @@
-mkp.ko
 bootprof.ko
 dbgtop-drm.ko
 irq-dbg.ko
@@ -169,7 +168,6 @@ mtk-swpm-perf-arm-pmu.ko
 cache-parity.ko
 simtray.ko
 mtk-socinfo.ko
-mkp.ko
 bootprof.ko
 dbgtop-drm.ko
 irq-dbg.ko

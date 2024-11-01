@@ -49,7 +49,6 @@ iommu_secure.ko
 iommu_debug.ko
 mtk_iommu.ko
 iommu_test.ko
-mi_page_pool.ko
 mtk_mm_heap.ko
 system_heap.ko
 mtk-cmdq-drv-ext.ko
@@ -62,12 +61,10 @@ mtk_panel_ext.ko
 mediatek-drm-gateic.ko
 mediatek-drm-panel-drv.ko
 mediatek-drm.ko
-aee_rs.ko
 mmprofile.ko
 mtk-uart-apdma.ko
 8250_mtk.ko
 phy-mtk-xsphy.ko
-usb_boost.ko
 mtu3.ko
 xhci-mtk-hcd.ko
 mux_switch.ko
@@ -168,13 +165,10 @@ mtk-mbox-mailbox.ko
 clk-disable-unused.ko
 mtk-pm-domain-disable-unused.ko
 cache-parity.ko
-uload_ind.ko
-load_track.ko
 simtray.ko
 sec.ko
 mtk-socinfo.ko
 emi-mpu-hook-v1.ko
-gpu_plaid.ko
 xiaomi_touch.ko
 nvt36672c.ko
 double_click.ko

@@ -125,8 +125,6 @@ mtk-composite.ko
 lm3644.ko
 flashlight.ko
 ktd2687.ko
-ktd2687_left.ko
-ktd2687_right.ko
 mtk-lpm.ko
 mtk-lpm-dbg-common-v1.ko
 mtk-lpm-plat-v1.ko

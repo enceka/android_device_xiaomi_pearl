@@ -84,8 +84,6 @@ ufs-mediatek-dbg.ko
 mtk-dvfsrc-helper.ko
 mtk-dvfsrc-devfreq.ko
 clk-chk-mt6895.ko
-blocktag.ko
-pidmap.ko
 mtk-pmic-keys.ko
 mtk-kpd.ko
 regulator-vibrator.ko
@@ -102,8 +100,6 @@ clkbuf.ko
 device-apc-mt6895.ko
 teeperf.ko
 mcDrvModule.ko
-tee.ko
-mitee.ko
 industrialio-triggered-buffer.ko
 kfifo_buf.ko
 mt6375-adc.ko

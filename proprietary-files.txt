@@ -855,3 +855,7 @@ vendor_dlkm/lib/modules/xiaomi_touch.ko
 vendor_dlkm/lib/modules/xm_power_debug.ko
 vendor_dlkm/lib/modules/zram.ko
 vendor_dlkm/lib/modules/zsmalloc.ko
+
+# Boringssl-self-test
+system/bin/boringssl_self_test32
+vendor/bin/boringssl_self_test32

@@ -859,3 +859,26 @@ vendor_dlkm/lib/modules/zsmalloc.ko
 # Boringssl-self-test
 system/bin/boringssl_self_test32
 vendor/bin/boringssl_self_test32
+
+# Keymaster
+vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
+vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
+vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml
+vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
+vendor/lib64/libkmsetkey.so
+vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
+vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
+
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint@1.0-service.mitee
+vendor/etc/init/android.hardware.security.keymint-service.mitee.rc
+#vendor/etc/vintf/manifest/android.hardware.security.keymint-service.mitee.xml
+#vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xml
+#vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml
+
+# Boot
+#vendor/lib64/hw/android.hardware.boot@1.0-impl-1.2-mtkimpl.so
+
+# Gatekeeper
+#vendor/lib64/hw/gatekeeper.mitee.so
+#vendor/lib64/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.default.so

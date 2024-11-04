@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from pearl-user 14 SP1A.210812.016 V816.0.4.0.ULOCNXM release-keys
+# All unpinned blobs below are extracted from pearl-user 14 SP1A.210812.016 V816.0.3.0.ULOCNXM release-keys
 
 # Audio Configs
 vendor/etc/audio_param/AudioParamOptions_vext.xml
@@ -46,7 +46,7 @@ vendor/lib64/libmisoundcrossfade.so
 vendor/firmware/tfa98xx.cnt
 
 # Camera
-vendor/bin/hw/mt6895/camerahalserver
+vendor/bin/hw/mt6895/camerahalserver;SYMLINK=vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
@@ -415,6 +415,16 @@ vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
+vendor/lib64/mt6895/mtk000_mipi_raw_IdxMgr.so;SYMLINK=vendor/lib64/mtk000_mipi_raw_IdxMgr.so
+vendor/lib64/mt6895/mtk000_mipi_raw_tuning.so;SYMLINK=vendor/lib64/mtk000_mipi_raw_tuning.so
+vendor/lib64/mt6895/pearlgc02m1_mipi_raw_IdxMgr.so;SYMLINK=vendor/lib64/pearlgc02m1_mipi_raw_IdxMgr.so
+vendor/lib64/mt6895/pearlgc02m1_mipi_raw_tuning.so;SYMLINK=vendor/lib64/pearlgc02m1_mipi_raw_tuning.so
+vendor/lib64/mt6895/pearlov16a1_mipi_raw_IdxMgr.so;SYMLINK=vendor/lib64/pearlov16a1_mipi_raw_IdxMgr.so
+vendor/lib64/mt6895/pearlov16a1_mipi_raw_tuning.so;SYMLINK=vendor/lib64/pearlov16a1_mipi_raw_tuning.so
+vendor/lib64/mt6895/pearlov64b_mipi_raw_IdxMgr.so;SYMLINK=vendor/lib64/pearlov64b_mipi_raw_IdxMgr.so
+vendor/lib64/mt6895/pearlov64b_mipi_raw_tuning.so;SYMLINK=vendor/lib64/pearlov64b_mipi_raw_tuning.so
+vendor/lib64/mt6895/pearls5k4h7_mipi_raw_IdxMgr.so;SYMLINK=vendor/lib64/pearls5k4h7_mipi_raw_IdxMgr.so
+vendor/lib64/mt6895/pearls5k4h7_mipi_raw_tuning.so;SYMLINK=vendor/lib64/pearls5k4h7_mipi_raw_tuning.so
 
 # Camera (Configs)
 vendor/etc/camera/xiaomi/dualbokehsnapshot.json
@@ -529,14 +539,44 @@ vendor/lib64/com.xiaomi.plugin.supernight.so
 vendor/lib64/com.xiaomi.plugin.swflip.so
 vendor/lib64/com.xiaomi.plugin.tetrassr.so
 
-# Charger (Mi Turbo Charge)
+# Charger
 vendor/bin/batterysecret
+vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 
 # Device Project
 vendor/etc/init/hw/init.project.rc
 
-# Display Configs
+# Display Config
 vendor/etc/cust_color.xml
+vendor/etc/dsi_l16s_36_02_0a_dsc_vdo_mi.xml
+
+# Display (Xiaomi)
+vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+vendor/bin/displayfeature
+vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+vendor/lib64/hw/displayfeature.default.so
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib64/libMiDispDevManager.so
+vendor/lib64/libcolortempmode.so
+vendor/lib64/libdisplayfeature.so
+vendor/lib64/libdisplayfeatureservice.so
+vendor/lib64/libdither.so
+vendor/lib64/libdrm.so
+vendor/lib64/libeyecare.so
+vendor/lib64/libflatbuffers-cpp.so
+vendor/lib64/libflatmode.so
+vendor/lib64/libmiBrightness.so
+vendor/lib64/libmiXmlParser.so
+vendor/lib64/libmi_dspp.so
+vendor/lib64/libpaperMode.so
+vendor/lib64/librelight_only.so
+vendor/lib64/libsdk_sr.so
+vendor/lib64/libsdr2hdr.so
+vendor/lib64/libsre.so
+vendor/lib64/libtruetone.so
+vendor/lib64/libvideomode.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.so;FIX_SONAME
@@ -856,11 +896,7 @@ vendor_dlkm/lib/modules/xm_power_debug.ko
 vendor_dlkm/lib/modules/zram.ko
 vendor_dlkm/lib/modules/zsmalloc.ko
 
-# Boringssl-self-test
-system/bin/boringssl_self_test32
-vendor/bin/boringssl_self_test32
-
-# Keymaster
+# Keystore
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml
@@ -868,17 +904,17 @@ vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/libkmsetkey.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
-
-# Keymint
 vendor/bin/hw/android.hardware.security.keymint@1.0-service.mitee
 vendor/etc/init/android.hardware.security.keymint-service.mitee.rc
-#vendor/etc/vintf/manifest/android.hardware.security.keymint-service.mitee.xml
-#vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xml
-#vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml
-
-# Boot
-#vendor/lib64/hw/android.hardware.boot@1.0-impl-1.2-mtkimpl.so
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service.mitee.xml
+vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xml
+vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml
+vendor/bin/hw/vendor.xiaomi.hardware.secure_element@1.2-service
+vendor/lib64/android.hardware.secure_element@1.0.so
+vendor/lib64/android.hardware.secure_element@1.1.so
+vendor/lib64/android.hardware.secure_element@1.2.so
+vendor/etc/init/android.hardware.secure_element@1.2-mediatek.rc
+vendor/etc/init/vndservicemanager.rc
 
 # Gatekeeper
-#vendor/lib64/hw/gatekeeper.mitee.so
-#vendor/lib64/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.default.so
+vendor/lib64/hw/gatekeeper.mitee.so

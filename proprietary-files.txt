@@ -896,7 +896,7 @@ vendor_dlkm/lib/modules/xm_power_debug.ko
 vendor_dlkm/lib/modules/zram.ko
 vendor_dlkm/lib/modules/zsmalloc.ko
 
-# Keystore
+# Keymaster
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml
@@ -904,17 +904,3 @@ vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/libkmsetkey.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
-vendor/bin/hw/android.hardware.security.keymint@1.0-service.mitee
-vendor/etc/init/android.hardware.security.keymint-service.mitee.rc
-vendor/etc/vintf/manifest/android.hardware.security.keymint-service.mitee.xml
-vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xml
-vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml
-vendor/bin/hw/vendor.xiaomi.hardware.secure_element@1.2-service
-#vendor/lib64/android.hardware.secure_element@1.0.so
-#vendor/lib64/android.hardware.secure_element@1.1.so
-#vendor/lib64/android.hardware.secure_element@1.2.so
-vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
-#vendor/etc/init/vndservicemanager.rc
-
-# Gatekeeper
-vendor/lib64/hw/gatekeeper.mitee.so

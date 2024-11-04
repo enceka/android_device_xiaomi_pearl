@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/pearl
+BOARD_TEE_VARIANT ?= mitee
 
 # Inherit from mt6895-common
 include device/xiaomi/mt6895-common/BoardConfigCommon.mk

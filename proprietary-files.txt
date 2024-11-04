@@ -910,10 +910,11 @@ vendor/etc/vintf/manifest/android.hardware.security.keymint-service.mitee.xml
 vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xml
 vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml
 vendor/bin/hw/vendor.xiaomi.hardware.secure_element@1.2-service
-vendor/lib64/android.hardware.secure_element@1.0.so
-vendor/lib64/android.hardware.secure_element@1.1.so
-vendor/lib64/android.hardware.secure_element@1.2.so
+#vendor/lib64/android.hardware.secure_element@1.0.so
+#vendor/lib64/android.hardware.secure_element@1.1.so
+#vendor/lib64/android.hardware.secure_element@1.2.so
 vendor/etc/init/android.hardware.secure_element@1.2-mediatek.rc
+#vendor/etc/init/vndservicemanager.rc
 
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mitee.so

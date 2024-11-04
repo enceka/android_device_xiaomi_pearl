@@ -561,9 +561,9 @@ vendor/lib64/libcolortempmode.so
 vendor/lib64/libdisplayfeature.so
 vendor/lib64/libdisplayfeatureservice.so
 vendor/lib64/libdither.so
-vendor/lib64/libdrm.so
+#vendor/lib64/libdrm.so
 vendor/lib64/libeyecare.so
-vendor/lib64/libflatbuffers-cpp.so
+#vendor/lib64/libflatbuffers-cpp.so
 vendor/lib64/libflatmode.so
 vendor/lib64/libmiBrightness.so
 vendor/lib64/libmiXmlParser.so
@@ -575,7 +575,7 @@ vendor/lib64/libsdr2hdr.so
 vendor/lib64/libsre.so
 vendor/lib64/libtruetone.so
 vendor/lib64/libvideomode.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+#vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 
 # Fingerprint
@@ -913,7 +913,7 @@ vendor/bin/hw/vendor.xiaomi.hardware.secure_element@1.2-service
 #vendor/lib64/android.hardware.secure_element@1.0.so
 #vendor/lib64/android.hardware.secure_element@1.1.so
 #vendor/lib64/android.hardware.secure_element@1.2.so
-vendor/etc/init/android.hardware.secure_element@1.2-mediatek.rc
+vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 #vendor/etc/init/vndservicemanager.rc
 
 # Gatekeeper

@@ -17,7 +17,7 @@ PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH)
 
 # Keymaster
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 	android.hardware.keymaster@3.0-service \
 	android.hardware.keymaster@4.0-service \
 	android.hardware.keymaster@4.1-service \
@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
 
 # FM Radio
 #PRODUCT_PACKAGES += \
-#    FMRadio
+    FMRadio
 
 # NFC
 PRODUCT_PACKAGES += \

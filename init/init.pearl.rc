@@ -11,14 +11,14 @@ service mtk_secure_element_hal_service /vendor/bin/hw/android.hardware.secure_el
     group secure_element
     disabled
 
-service vendor.secure_element /vendor/bin/hw/vendor.microtrust.hardware.se@1.0-service
+service vendor.secure_element /vendor/bin/hw/vendor.xiaomi.hardware.secure_element@1.2-service
     override
     class late_start
     user system
     group nfc
     disabled
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@2.0-service.nxp
     override
     class early_hal
     user nfc

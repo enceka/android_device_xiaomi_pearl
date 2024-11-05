@@ -154,7 +154,6 @@ vendor/lib64/mt6895/libcamalgo.ainr.so;SYMLINK=vendor/lib64/libcamalgo.ainr.so
 vendor/lib64/mt6895/libcamalgo.ais2.bss.so;SYMLINK=vendor/lib64/libcamalgo.ais2.bss.so
 vendor/lib64/mt6895/libcamalgo.ais2.mfnr.so;SYMLINK=vendor/lib64/libcamalgo.ais2.mfnr.so
 vendor/lib64/mt6895/libcamalgo.ais2.mstm.so;SYMLINK=vendor/lib64/libcamalgo.ais2.mstm.so
-vendor/lib64/mt6895/libcamalgo.ais2.so;SYMLINK=vendor/lib64/libcamalgo.ais2.so
 vendor/lib64/mt6895/libcamalgo.bss.so;SYMLINK=vendor/lib64/libcamalgo.bss.so
 vendor/lib64/mt6895/libcamalgo.fus.so;SYMLINK=vendor/lib64/libcamalgo.fus.so
 vendor/lib64/mt6895/libcamalgo.lsc.so;SYMLINK=vendor/lib64/libcamalgo.lsc.so

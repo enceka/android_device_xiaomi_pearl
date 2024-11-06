@@ -68,5 +68,8 @@ ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest_pearl.xml
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Security Patch Level
+VENDOR_SECURITY_PATCH := 2024-08-01
+
 # Inherit the proprietary files
 include vendor/xiaomi/pearl/BoardConfigVendor.mk

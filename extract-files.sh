@@ -19,5 +19,4 @@ export TARGET_TEE=mitee
 export VENDOR=xiaomi
 export VENDOR_COMMON=${VENDOR}
 
-
 "./../../${VENDOR_COMMON}/${DEVICE_COMMON}/extract-files.sh" "$@"

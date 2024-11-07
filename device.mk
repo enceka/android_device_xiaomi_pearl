@@ -14,11 +14,6 @@ BOARD_VENDOR := xiaomi
 DEVICE_PATH := device/xiaomi/pearl
 BOARD_TEE_VARIANT := mitee
 
-# VNDSERVICE
-PRODUCT_PACKAGES += \
-    vndservice \
-    vndservicemanager
-
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \

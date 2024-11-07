@@ -6,5 +6,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
-    <string name="def_device_name_simple">POCO X4 GT</string>
+    <string name="def_device_name_simple">Redmi Note 12T Pro</string>
 </resources>

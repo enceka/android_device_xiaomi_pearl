@@ -12,7 +12,7 @@ include device/xiaomi/mt6895-common/BoardConfigCommon.mk
 # Display
 TARGET_SCREEN_DENSITY := 392
 
-ODM_MANIFEST_pearl_FILES := $(DEVICE_PATH)/manifest_pearl.xml
+ODM_MANIFEST_PEARL_FILES := $(DEVICE_PATH)/manifest_pearl.xml
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
@@ -32,6 +32,7 @@ TARGET_KERNEL_CONFIG := \
 
 TARGET_KERNEL_DTB := \
     vendor/mediatek/mt6895.dtb
+
 # Platform
 BOARD_HAVE_MTK_FM := true
 

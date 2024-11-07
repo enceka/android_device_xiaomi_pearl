@@ -6,8 +6,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- List of SKUs where Secure NFC functionality is supported -->
-    <string-array name="config_skuSupportsSecureNfc" translatable="false">
-        <item>xaga</item>
-        <item>xagapro</item>
+    <string-array name="config_SupportsSecureNfc" translatable="false">
+        <item>pearl</item>
     </string-array>
 </resources>

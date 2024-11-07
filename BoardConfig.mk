@@ -68,6 +68,10 @@ ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest_pearl.xml
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Geniezone Debug
+CONFIG_MTK_AEE_IPANIC += true
+TRUSTY_SMC_DEBUG += true
+
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2024-08-01
 

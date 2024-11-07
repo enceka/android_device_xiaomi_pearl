@@ -520,9 +520,6 @@ vendor/lib64/com.xiaomi.plugin.tetrassr.so
 vendor/bin/batterysecret
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 
-# Device Project
-vendor/etc/init/hw/init.project.rc
-
 # Display Config
 vendor/etc/cust_color.xml
 vendor/etc/dsi_l16s_36_02_0a_dsc_vdo_mi.xml
@@ -648,3 +645,4 @@ vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/libkmsetkey.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
+

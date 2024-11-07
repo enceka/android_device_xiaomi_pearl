@@ -7,9 +7,10 @@
 # Inherit from mt6895-common
 $(call inherit-product, device/xiaomi/mt6895-common/mt6895.mk)
 
-# FM Radio
+# VNDSERVICE
 PRODUCT_PACKAGES += \
-    FMRadio
+    vndservice \
+    vndservicemanager
 
 # NFC
 PRODUCT_PACKAGES += \

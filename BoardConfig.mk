@@ -33,9 +33,6 @@ TARGET_KERNEL_CONFIG := \
 TARGET_KERNEL_DTB := \
     vendor/mediatek/mt6895.dtb
 
-# Platform
-BOARD_HAVE_MTK_FM := true
-
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop

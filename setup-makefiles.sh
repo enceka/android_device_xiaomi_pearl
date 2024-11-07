@@ -5,6 +5,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
+    return
+fi
+
+set -e
+
+
 export DEVICE=pearl
 export DEVICE_COMMON=mt6895-common
 export TARGET_TEE=mitee

@@ -7,6 +7,13 @@
 # Inherit from mt6895-common
 $(call inherit-product, device/xiaomi/mt6895-common/mt6895.mk)
 
+# Platform
+TARGET_BOARD_PLATFORM := mt6895
+BOARD_HAS_MTK_HARDWARE := true
+BOARD_VENDOR := xiaomi
+DEVICE_PATH := device/xiaomi/pearl
+BOARD_TEE_VARIANT := mitee
+
 # VNDSERVICE
 PRODUCT_PACKAGES += \
     vndservice \

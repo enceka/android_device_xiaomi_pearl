@@ -29,7 +29,7 @@ TARGET_KERNEL_CONFIG := \
 	gki_defconfig \
 	vendor/xiaomi_mt6895.config \
 	vendor/$(PRODUCT_DEVICE).config
-
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_DTB := \
     vendor/mediatek/mt6895.dtb
 

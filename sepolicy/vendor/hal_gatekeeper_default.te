@@ -1,0 +1,6 @@
+allow hal_gatekeeper_default mitee_client_device:chr_file rw_file_perms;
+
+allow hal_gatekeeper_default kmsg_device:chr_file rw_file_perms;
+
+get_prop(hal_gatekeeper_default, vendor_mtk_mitee_prop)
+set_prop(hal_gatekeeper_default, vendor_mtk_mitee_prop)

@@ -92,9 +92,6 @@ TARGET_NO_BOOTLOADER := true
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/manifest.xml
-ifeq ($(TARGET_HAS_UDFPS),true)
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/vintf/manifest_udfps.xml
-endif
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/vintf/framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
@@ -151,6 +148,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Power
+TARGET_PROVIDES_MTK_POWER_SERVICE_LIB := false
 TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(DEVICE_PATH):libperfmgr-ext-xiaomi
 
 # Properties
@@ -212,7 +210,7 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := 1
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2024-09-01
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Inherit the proprietary files
 include vendor/xiaomi/pearl/BoardConfigVendor.mk

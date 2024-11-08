@@ -252,6 +252,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	android.hardware.keymaster@4.0-service \
 	android.hardware.keymaster@4.1-service \
+	android.hardware.keymaster@4.0.vendor \
+	android.hardware.keymaster@4.1.vendor \
 	libkeymaster4.vendor:64 \
 	libkeymaster4support.vendor:64 \
 	libkeymaster_portable.vendor:64 \
@@ -324,6 +326,8 @@ PRODUCT_COPY_FILES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
+    init.insmod.sh \
+    init.insmod.mt6895.cfg \
     fstab.mt6895 \
     fstab.mt6895.vendor_ramdisk \
     init.batterysecret.rc \
@@ -419,7 +423,8 @@ PRODUCT_PACKAGES += \
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
-    libchrome.vendor
+    libchrome.vendor \
+    SecureElement
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -493,6 +498,11 @@ PRODUCT_COPY_FILES += \
 
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
+
+# Vndservice
+PRODUCT_PACKAGES += \
+    vndservice \
+    vndservicemanager
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

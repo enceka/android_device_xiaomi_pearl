@@ -1,4 +1,4 @@
 type vendor_displayfeature_sysfs, sysfs_type, fs_type;
 
-allow mtk_hal_pq vendor_displayfeature_sysfs:file rw_file_perms;
+allow mtk_hal_pq vendor_displayfeature_sysfs:dir search;
 allow mtk_hal_pq vendor_displayfeature_sysfs:file rw_file_perms;

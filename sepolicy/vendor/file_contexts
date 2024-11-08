@@ -130,8 +130,8 @@
 
 # Displayfeature
 /data/vendor/display(/.*)? u:object_r:vendor_display_data_file:s0
-/vendor/bin/displayfeature u:object_r:vendor_displayfeature_exec:s0
-/vendor/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service u:object_r:vendor_hal_displayfeature_xiaomi_default_exec:s0
+/(vendor|system\/vendor)/bin/displayfeature u:object_r:vendor_displayfeature_exec:s0
+/(vendor|system\/vendor)/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service u:object_r:vendor_hal_displayfeature_xiaomi_default_exec:s0
 
 # Ir
 /dev/ir_spi u:object_r:vendor_ir_spi_device:s0

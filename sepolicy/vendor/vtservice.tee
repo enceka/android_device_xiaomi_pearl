@@ -1,2 +1,0 @@
-allow vtservice default_android_service:service_manager find;
-allow vtservice vendor_default_prop:file read;

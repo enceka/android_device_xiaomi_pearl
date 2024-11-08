@@ -5,6 +5,4 @@ allow tee mitee_data_file:file create_file_perms;
 allow tee mitee_sfs_file:dir create_dir_perms;
 allow tee mitee_sfs_file:file create_file_perms;
 
-allow tee proc:file read;
-
 set_prop(tee, vendor_mtk_mitee_prop)

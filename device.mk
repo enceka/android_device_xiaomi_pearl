@@ -20,8 +20,8 @@ BOARD_VENDOR := xiaomi
 DEVICE_PATH := device/xiaomi/pearl
 BOARD_TEE_VARIANT := mitee
 
-# Enable pre-opting to reduce boot time
-LOCAL_DEX_PREOPT := true
+# Enable DM file pre-opting to reduce first boot time
+PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 
 # NFC
 PRODUCT_PACKAGES += \

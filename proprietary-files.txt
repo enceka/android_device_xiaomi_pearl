@@ -796,15 +796,12 @@ vendor/bin/displayfeature
 vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
 vendor/lib64/hw/displayfeature.default.so
 vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib64/libMiDispDevManager.so
 vendor/lib64/libcolortempmode.so
 vendor/lib64/libdisplayfeature.so
 vendor/lib64/libdisplayfeatureservice.so
 vendor/lib64/libdither.so
-vendor/lib64/libdrm.so
 vendor/lib64/libeyecare.so
-vendor/lib64/libflatbuffers-cpp.so
 vendor/lib64/libflatmode.so
 vendor/lib64/libmiBrightness.so
 vendor/lib64/libmiXmlParser.so

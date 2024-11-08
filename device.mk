@@ -20,6 +20,9 @@ BOARD_VENDOR := xiaomi
 DEVICE_PATH := device/xiaomi/pearl
 BOARD_TEE_VARIANT := mitee
 
+# Enable pre-opting to reduce boot time
+LOCAL_DEX_PREOPT := true
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
@@ -389,12 +392,11 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.lineage-libperfmgr \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
-    libmtkperf_client_vendor \
-    libmtkperf_client
+    android.hardware.power-service-mediatek \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.3.vendor \
     android.hardware.power@1.2.vendor \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.1.vendor \

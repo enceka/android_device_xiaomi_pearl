@@ -1,0 +1,5 @@
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# HWUI
+debug.hwui.skia_atrace_enabled=false

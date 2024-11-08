@@ -1,12 +1,151 @@
 //
-// Copyright (C) 2024 The LineageOS Project
+// Copyright (C) 2023 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
-
 prebuilt_etc {
     name: "init.pearl.rc",
     src: "init.pearl.rc",
     sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "fstab.mt6895",
+    src: "fstab.mt6895",
+    vendor: true,
+    vendor_ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "init.batterysecret.rc",
+    src: "init.batterysecret.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "init.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.fingerprint.rc",
+    src: "init.fingerprint.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mi_thermald.rc",
+    src: "init.mi_thermald.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.modem.rc",
+    src: "init.modem.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6895.rc",
+    src: "init.mt6895.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6895.power.rc",
+    src: "init.mt6895.power.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6895.usb.rc",
+    src: "init.mt6895.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mtkgki.rc",
+    src: "init.mtkgki.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.sensor_2_0.rc",
+    src: "init.sensor_2_0.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.mt6895.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.mt6895.rc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.connectivity.common.rc",
+    sub_dir: "init/hw",
+    src: "meta_init.connectivity.common.rc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.connectivity.rc",
+    sub_dir: "init/hw",
+    src: "meta_init.connectivity.rc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.modem.rc",
+    sub_dir: "init/hw",
+    src: "meta_init.modem.rc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.project.rc",
+    sub_dir: "init/hw",
+    src: "meta_init.project.rc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.rc",
+    sub_dir: "init/hw",
+    src: "meta_init.rc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "meta_init.vendor.rc",
+    sub_dir: "init/hw",
+    src: "meta_init.vendor.rc",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "multi_init.rc",
+    sub_dir: "init/hw",
+    src: "multi_init.rc",
     vendor: true,
 }

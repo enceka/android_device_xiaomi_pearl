@@ -1,0 +1,2 @@
+dontaudit secure_element system_data_file:dir { create add_name remove_name };
+dontaudit secure_element system_data_file:file { create rename write open };

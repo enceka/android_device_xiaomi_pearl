@@ -304,18 +304,17 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    FrameworksResPearl \
-    NfcOverlayPearl \
-    SettingsProviderOverlayPearl \
-    SystemUIResPearl \
-    WifiOverlayPearl
+    FrameworksResOverlay \
+    NfcOverlay \
+    SettingsProviderOverlay \
+    SystemUIResOverlay \
+    WifiResOverlay
 
 PRODUCT_PACKAGES += \
-    LineageApertureOverlayMT6895 \
-    LineageSDKOverlayMT6895 \
-    LineageSettingsOverlayMT6895 \
-    LineageDialerMT6895
-
+    LineageApertureOverlay \
+    LineageDialerOverlay \
+    LineageSDKOverlay
+    
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
@@ -403,11 +402,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
-# Power-off Alarm
-PRODUCT_PACKAGES += \
-    PowerOffAlarm
-
+  
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
@@ -440,13 +435,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/google/pixel \
-    hardware/google/interfaces \
-    hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek \
-    hardware/mediatek/libmtkperf_client \
     hardware/xiaomi
-
 
 # Thermal
 PRODUCT_PACKAGES += \

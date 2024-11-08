@@ -182,7 +182,6 @@
 /mnt/vendor/persist/data(/.*)? u:object_r:mitee_sfs_file:s0
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.security\.keymint@1\.0-service\.mitee  u:object_r:hal_keymint_default_exec:s0
 
-
 # Thermal
 /vendor/bin/mi_thermald u:object_r:vendor_mi_thermald_exec:s0
 

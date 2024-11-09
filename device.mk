@@ -153,7 +153,8 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
-    android.hardware.memtrack-service.mediatek-mali
+    android.hardware.memtrack-service.mediatek-mali \
+    vendor.xiaomi.hardware.displayfeature@1.0.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
@@ -409,7 +410,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
   
 # Properties
-#include $(LOCAL_PATH)/vendor_logtag.mk
+include $(LOCAL_PATH)/vendor_logtag.mk
 
 # Protobuf
 PRODUCT_PACKAGES += \

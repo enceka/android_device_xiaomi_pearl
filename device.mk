@@ -416,11 +416,6 @@ include $(LOCAL_PATH)/vendor_logtag.mk
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
-# Modules
-#PRODUCT_PACKAGES += \
-    init.insmod.sh \
-    init.insmod.mt6895.cfg
-
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \

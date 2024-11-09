@@ -22,7 +22,7 @@ BOARD_TEE_VARIANT := mitee
 
 # Enable DM file pre-opting to reduce first boot time
 # Note that this may significantly increase your compilation time!
-PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
+#PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 
 # NFC
 PRODUCT_PACKAGES += \

@@ -18,7 +18,7 @@ service vendor.secure_element /vendor/bin/hw/vendor.xiaomi.hardware.secure_eleme
     group nfc secure_element
     disabled
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@2.0-service.nxp
+service vendor.nfc_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     override
     class early_hal
     user nfc

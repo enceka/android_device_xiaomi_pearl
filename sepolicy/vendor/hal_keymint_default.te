@@ -1,6 +1,6 @@
 type mitee_data_file, file_type, data_file_type;
 type mitee_sfs_file, file_type, data_file_type;
-type mitee_client_device, dev_type;
+type mitee_client_device, dev_type, mlstrustedobject;
 
 allow hal_keymint_default mitee_client_device:chr_file rw_file_perms;
 allow hal_keymint_default kmsg_device:chr_file rw_file_perms;

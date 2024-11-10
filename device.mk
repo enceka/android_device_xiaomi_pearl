@@ -394,8 +394,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+    android.hardware.power-service-mediatek
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
@@ -441,14 +440,13 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal-service.mediatek
+    android.hardware.thermal@2.0-service.mtk
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
 # USB
 $(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)
-
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
@@ -457,7 +455,8 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
+    vendor.qti.hardware.vibrator.service \
+    android.hardware.vibrator-V1-ndk_platform.vendor
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml

@@ -441,7 +441,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
-    hardware/xiaomi
+    hardware/xiaomi \
+    hardware/google/pixel \
+    hardware/google/interfaces \
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/mediatek/libmtkperf_client
 
 # Thermal
 PRODUCT_PACKAGES += \

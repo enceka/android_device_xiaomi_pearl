@@ -1,3 +1,6 @@
 attribute vendor_hal_displayfeature_xiaomi;
 attribute vendor_hal_displayfeature_xiaomi_client;
 attribute vendor_hal_displayfeature_xiaomi_server;
+
+attribute hal_vibratorfeature_client;
+attribute hal_vibratorfeature_server;

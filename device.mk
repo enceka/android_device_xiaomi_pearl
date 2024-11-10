@@ -395,7 +395,10 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek
+    android.hardware.power-service-mediatek \
+    android.hardware.power-service.lineage-libperfmgr \
+    libmtkperf_client_vendor \
+    libmtkperf_client
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
@@ -441,7 +444,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.mtk
+    android.hardware.thermal-service.mediatek
 
 # USB
 $(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)

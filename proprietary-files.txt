@@ -761,6 +761,7 @@ vendor/etc/init/vibrator-mtk-default.rc
 vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc
 vendor/lib64/libvibrator.so
 vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so
+vendor/lib64/libaachaptics.so
 
 
 # Fingerprint

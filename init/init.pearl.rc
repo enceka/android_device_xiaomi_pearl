@@ -3,26 +3,40 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+service vendor.mrmd /odm/bin/mrmd_mitee
+    override
+    class hal
+    user system
+    group system shell
+    disabled
 
-service mtk_secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
+service mtk-secure-element-hal-service /vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
     override
     class hal
     user secure_element
     group secure_element
     disabled
 
-service vendor.secure_element /vendor/bin/hw/vendor.xiaomi.hardware.secure_element@1.2-service
+service vendor.vibratorfeature-hal-service /vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
+    override
+    class hal
+    user system
+    group drmrpc system input
+    disabled
+
+service vendor.secure-element /vendor/bin/hw/vendor.xiaomi.hardware.secure_element@1.2-service
     override
     class late_start
     user system
     group nfc secure_element
     disabled
 
-service vendor.nfc_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+service vendor.nfc-hal-service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     override
     class early_hal
     user nfc
     group nfc drmrpc system
+    seclabel u:object_r:hal_nfc_default_exec:s0
     disabled
 
 service vendor.keymint-mitee /vendor/bin/hw/android.hardware.security.keymint@1.0-service.mitee
@@ -36,7 +50,9 @@ service vendor.keymint-mitee /vendor/bin/hw/android.hardware.security.keymint@1.
     disabled
 
 on boot
+    enable vendor.mrmd
     enable vendor.keymint-mitee
-    enable mtk_secure_element_hal_service
-    enable vendor.secure_element
-    enable vendor.nfc_hal_service
+    enable mtk-secure-element-hal-service
+    enable vendor.secure-element
+    enable vendor.nfc-hal-service
+    enable vendor.vibratorfeature-hal-service

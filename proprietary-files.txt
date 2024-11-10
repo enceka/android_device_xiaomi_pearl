@@ -754,6 +754,7 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 vendor/lib64/libaedv.so
 
 # Vibrator
+odm/bin/vib_cal
 vendor/firmware/aw8697_haptic.bin
 vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
 vendor/etc/init/vibrator-mtk-default.rc
@@ -765,7 +766,7 @@ vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.so;FIX_SONAME
 
-# Charger
+# Power
 vendor/bin/batterysecret
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
@@ -1088,6 +1089,9 @@ vendor/lib64/ls_nq_client-v1.so
 vendor/lib64/se_nq_extn_client-v1.so
 
 # Trusted Execution Environment (TEE)
+odm/bin/mrmd_mitee
+odm/lib64/vendor.xiaomi.hardware.mrm-V1-ndk_platform.so
+odm/lib64/libmiriskmanager_mitee.so
 vendor/bin/miteelog
 vendor/bin/mitee_shell
 vendor/bin/tee-supplicant

@@ -398,7 +398,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
     android.hardware.power-service.lineage-libperfmgr \
     libmtkperf_client_vendor \
-    libmtkperf_client
+    libmtkperf_client \
+    pixel-power-ext-V1-ndk.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \

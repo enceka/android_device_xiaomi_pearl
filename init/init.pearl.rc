@@ -3,12 +3,6 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-service vendor.mrmd /odm/bin/mrmd_mitee
-    override
-    class hal
-    user system
-    group system shell
-    disabled
 
 service mtk-secure-element-hal-service /vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
     override
@@ -43,7 +37,6 @@ service vendor.keymint-mitee /vendor/bin/hw/android.hardware.security.keymint@1.
     disabled
 
 on boot
-    enable vendor.mrmd
     enable vendor.keymint-mitee
     enable mtk-secure-element-hal-service
     enable vendor.secure-element

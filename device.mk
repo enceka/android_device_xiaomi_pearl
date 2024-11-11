@@ -20,9 +20,16 @@ BOARD_VENDOR := xiaomi
 DEVICE_PATH := device/xiaomi/pearl
 BOARD_TEE_VARIANT := mitee
 
+# Enable PREOPT
+LOCAL_DEX_PREOPT := true
+
+# Android GO
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+
 # Enable DM file pre-opting to reduce first boot time
 # Note that this may significantly increase your compilation time!
-#PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
+PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -449,7 +456,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal-service.mediatek
+    android.hardware.thermal@2.0-service.mtk
 
 # USB
 $(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)

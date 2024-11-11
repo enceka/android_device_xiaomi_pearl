@@ -754,14 +754,14 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 vendor/lib64/libaedv.so
 
 # Vibrator
-odm/bin/vib_cal
+#odm/bin/vib_cal
 vendor/firmware/aw8697_haptic.bin
-vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
-vendor/etc/init/vibrator-mtk-default.rc
-vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc
-vendor/lib64/libvibrator.so
-vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so
-vendor/lib64/libaachaptics.so
+#vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
+#vendor/etc/init/vibrator-mtk-default.rc
+#vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc
+#vendor/lib64/libvibrator.so
+#vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so
+#vendor/lib64/libaachaptics.so
 
 
 # Fingerprint

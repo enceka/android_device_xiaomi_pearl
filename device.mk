@@ -403,7 +403,6 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
-    android.hardware.power-service.lineage-libperfmgr \
     libmtkperf_client_vendor \
     libmtkperf_client \
     pixel-power-ext-V1-ndk.vendor
@@ -414,7 +413,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.1.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor \
-    android.hardware.power-V2-ndk_platform.vendor \
     android.hardware.power-V2-ndk_platform.vendor
 
 PRODUCT_COPY_FILES += \
@@ -451,7 +449,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi \
     hardware/google/pixel \
     hardware/google/interfaces \
-    hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek/libmtkperf_client
 
 # Thermal

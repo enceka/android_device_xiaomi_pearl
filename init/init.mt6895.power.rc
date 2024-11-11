@@ -48,6 +48,7 @@ on post-fs-data
     write /sys/block/dm-5/queue/read_ahead_kb 2048
 
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
+    write /proc/sys/kernel/sched_pelt_multiplier 2
 
 on boot
     # boot perf. tune
@@ -91,7 +92,8 @@ on property:sys.boot_completed=1
     write /dev/cpuctl/system-background/cpu.uclamp.latency_sensitive 0
 
     # foreground
-    write /dev/cpuctl/foreground/cpu.uclamp.max max
+    # cap the max utilisation for foreground tasks to save power.
+    write /dev/cpuctl/foreground/cpu.uclamp.max 80
     write /dev/cpuctl/foreground/cpu.uclamp.min 10
     write /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive 0
 
@@ -115,9 +117,6 @@ on property:sys.boot_completed=1
     write /dev/cpuctl/camera-daemon/cpu.uclamp.max max
     write /dev/cpuctl/camera-daemon/cpu.uclamp.min 50
     write /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive 1
-
-    # Enable PowerHAL hint processing
-    setprop vendor.powerhal.init 1
 
 service vendor.hwcomposer-2-3 /vendor/bin/hw/android.hardware.graphics.composer@2.3-service
     class hal animation

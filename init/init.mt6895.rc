@@ -26,9 +26,9 @@ on init
 # mount different fs start
 
 on charger
-    # Configure default brightness and switch to drm backlight trigger.
+    # Configure default brightness and switch to backlight trigger.
     write /sys/class/leds/lcd-backlight/brightness 1000
-    write /sys/class/leds/lcd-backlight/trigger "backlight-drm"
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
 
 on fs
     wait_for_prop hwservicemanager.ready "true"
@@ -142,6 +142,9 @@ on post-fs-data
     mkdir /data/vendor/camera
     chown root system /data/vendor/camera
     chmod 0771 /data/vendor/camera
+    
+    mkdir /data/vendor/camera/offlinelog 0777 cameraserver audio
+    chmod 0666 /dev/camlog
 
     mkdir /data/vendor/camera/offlinelog 0777 cameraserver audio
     chmod 0666 /dev/camlog
@@ -284,11 +287,11 @@ on post-fs-data
     setrlimit 8 -1 -1
 
     # CMDQ
-    chmod 0640 /dev/mtk_mdp
+    chmod 0644 /dev/mtk_mdp
     chown system system /dev/mtk_mdp
 
     # MDP SYNC
-    chmod 0640 /dev/mdp_sync
+    chmod 0644 /dev/mdp_sync
     chown system system /dev/mdp_sync
 
     # MML PQ
@@ -328,9 +331,9 @@ on post-fs-data
     chmod 0660 /dev/vcu
     chown media system /dev/vcu
     chmod 0660 /dev/video0
-    chown media system /dev/video0
+    chown mediacodec system /dev/video0
     chmod 0660 /dev/video1
-    chown media system /dev/video1
+    chown mediacodec system /dev/video1
     mkdir /data/vendor/vcodec 0777 media system
     mkdir /data/vendor/vcodec/log 0770 media system
     mkdir /data/vendor/vcodec/in 0770 media system
@@ -681,8 +684,6 @@ on post-fs-data
 
 # End of adding by MTK drivers
 # -----------------------
-on early-boot
-    verity_update_state
 
 on boot
     write /proc/sys/vm/dirty_writeback_centisecs 300
@@ -909,6 +910,17 @@ on property:ro.boot.slot_suffix=_b
 on property:vendor.mtk.md1.status=reset
     setprop persist.vendor.atm.mdmode normal
 
+# FPSGO FBT Game
+on boot
+    insmod /vendor/lib/modules/fpsgo.ko
+
+# MSYNC Game
+on boot
+    insmod /vendor/lib/modules/msync2_dms.ko
+on boot
+    insmod /vendor/lib/modules/msync2_frd.ko
+
+# Audio Override
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
@@ -922,3 +934,8 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     task_profiles ProcessCapacityHigh HighPerformance
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
+
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix

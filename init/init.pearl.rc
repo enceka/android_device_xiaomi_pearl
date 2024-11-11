@@ -17,13 +17,6 @@ service mtk-secure-element-hal-service /vendor/bin/hw/android.hardware.secure_el
     group secure_element
     disabled
 
-service vendor.vibratorfeature-hal-service /vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
-    override
-    class hal
-    user system
-    group drmrpc system input
-    disabled
-
 service vendor.secure-element /vendor/bin/hw/vendor.xiaomi.hardware.secure_element@1.2-service
     override
     class late_start
@@ -55,4 +48,3 @@ on boot
     enable mtk-secure-element-hal-service
     enable vendor.secure-element
     enable vendor.nfc-hal-service
-    enable vendor.vibratorfeature-hal-service

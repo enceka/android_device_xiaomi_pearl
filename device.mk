@@ -72,13 +72,13 @@ PRODUCT_PACKAGES_DEBUG += \
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=$(PRODUCT_SYSTEM_PARTITIONS_FILE_SYSTEM_TYPE) \
+    FILESYSTEM_TYPE_system=$(BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE) \
     POSTINSTALL_OPTIONAL_system=true
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_vendor=true \
     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
-    FILESYSTEM_TYPE_vendor=erofs \
+    FILESYSTEM_TYPE_vendor=$(BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE) \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_PACKAGES += \
@@ -180,7 +180,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor
 
-# Dynamic PaBrtitions
+# Debug info
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
+WITH_DEXPREOPT_DEBUG_INFO := false
+# Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
@@ -190,17 +195,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
-
-ifeq ($(TARGET_HAS_UDFPS),true)
-PRODUCT_PACKAGES += \
-    libudfpshandler \
-    sensors.xiaomi.v2
-
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.sensors.xiaomi.udfps=true
-endif
-
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi 
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
 
@@ -264,9 +259,7 @@ PRODUCT_COPY_FILES += \
 # Keymaster
 PRODUCT_PACKAGES += \
 	android.hardware.keymaster@4.0-service \
-	android.hardware.keymaster@4.1-service \
 	android.hardware.keymaster@4.0.vendor \
-	android.hardware.keymaster@4.1.vendor \
 	libkeymaster4.vendor:64 \
 	libkeymaster4support.vendor:64 \
 	libkeymaster_portable.vendor:64 \
@@ -327,7 +320,7 @@ PRODUCT_PACKAGES += \
     LineageApertureOverlay \
     LineageDialerOverlay \
     LineageSDKOverlay
-    
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
@@ -417,7 +410,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-  
+
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 

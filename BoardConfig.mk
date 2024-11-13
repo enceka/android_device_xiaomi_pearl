@@ -32,16 +32,8 @@ TARGET_KERNEL_CONFIG := \
 	vendor/xiaomi_mt6895.config \
 	vendor/pearl.config
 BOARD_KERNEL_IMAGE_NAME := Image.gz
-
-BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_NO_KERNEL_OVERRIDE := true
-
-BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilts/dtb
-#BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
-
-#LOCAL_KERNEL := $(DEVICE_PATH)/prebuilts/Image.gz
-#PRODUCT_COPY_FILES += \
-	$(LOCAL_KERNEL):kernel
+TARGET_KERNEL_DTB := \
+     vendor/mediatek/mt6895.dtb
 
 # A/B
 AB_OTA_UPDATER := true

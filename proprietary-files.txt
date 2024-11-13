@@ -386,6 +386,10 @@ vendor/lib64/libSuperSensorCPU.so
 vendor/lib64/libSuperSensorProcessor.so
 vendor/lib64/lib_sr_models.so
 vendor/lib64/libaaa_gma.so
+vendor/lib64/libai_pq.so
+vendor/lib64/libai_sdr2hdr.so
+vendor/lib64/libai_sdr2hdr_auth.so
+vendor/lib64/libaispq.so
 vendor/lib64/libalCFR.so
 vendor/lib64/libalhLDC.so
 vendor/lib64/libalLDC.so

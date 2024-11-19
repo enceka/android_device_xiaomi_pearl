@@ -71,10 +71,6 @@ fi
 
 function blob_fixup {
     case "$1" in
-        system_ext/priv-app/ImsService/ImsService.apk)
-            [ "$2" = "" ] && return 0
-            apktool_patch "${2}" "${MY_DIR}/blob-patches/ImsService.patch" -r
-            ;;
         system_ext/lib64/libsink.so)
             [ "$2" = "" ] && return 0
             grep -q "libshim_sink.so" "${2}" || "${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
@@ -125,6 +121,7 @@ function blob_fixup {
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
 		vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
+			[ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
             ;;
         *)

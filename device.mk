@@ -37,9 +37,6 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     Tag
 
-PRODUCT_PACKAGES += \
-    android.hardware.nfc-service.nxp
-
 PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.nfc.ese.xml \
         frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.nfc.hce.xml \

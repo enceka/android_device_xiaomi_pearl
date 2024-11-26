@@ -23,6 +23,6 @@ PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="missi_phone_cn-user 14 UP1A.231005.007 V816.0.5.0.ULHCNXM release-keys"
+    PRIVATE_BUILD_DESC="missi_phone_cn-user 14 UP1A.231005.007 V816.0.6.0.ULHCNXM release-keys"
 
-BUILD_FINGERPRINT := Android/missi_phone_cn/missi:14/UP1A.231005.007/V816.0.5.0.ULHCNXM:user/release-keys
+BUILD_FINGERPRINT := Android/missi_phone_cn/missi:14/UP1A.231005.007/V816.0.6.0.ULHCNXM:user/release-keys

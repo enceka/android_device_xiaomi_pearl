@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=pearl
+DEVICE=generic
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
@@ -30,9 +30,7 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 # Warning headers and guards
 write_headers
 
-# The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
-#append_firmware_calls_to_makefiles "${MY_DIR}/proprietary-firmware.txt"
 
 # Finish
 write_footers

@@ -1,3 +1,0 @@
-# FM Radio
-get_prop(system_app, vendor_mtk_wmt_prop)
-get_prop(system_app, vendor_mtk_default_prop)

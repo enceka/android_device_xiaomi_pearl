@@ -1,1 +1,2 @@
-ro.product.property_source_order=odm,product,vendor,system_ext,system
+ro.product.odm.cert=23054RA19C
+ro.product.odm.marketname=Redmi Note 12T Pro

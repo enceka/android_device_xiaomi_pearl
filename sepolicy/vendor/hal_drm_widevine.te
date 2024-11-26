@@ -1,3 +1,0 @@
-allow hal_drm_widevine mitee_client_device:chr_file rw_file_perms;
-
-get_prop(hal_drm_widevine, vendor_mtk_mitee_prop)

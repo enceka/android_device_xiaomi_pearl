@@ -10,6 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+# Dalvik VM Configuration
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
@@ -42,7 +45,6 @@ PRODUCT_PACKAGES += \
     create_pl_dev.recovery
 
 # API levels
-BOARD_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := 33
 
 # fastbootd

@@ -1329,10 +1329,10 @@ system_ext/lib64/vendor.trustonic.tee@1.1.so
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib/hw/gatekeeper.default.so
+vendor/lib/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib/hw/gatekeeper.default.so
 vendor/lib/hw/gatekeeper.mitee.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib64/hw/gatekeeper.default.so
+vendor/lib64/hw/libSoftGatekeeper.so;SYMLINK=vendor/lib64/hw/gatekeeper.default.so
 vendor/lib64/hw/gatekeeper.mitee.so
 
 # GNSS
@@ -1408,9 +1408,11 @@ vendor/lib64/hw/consumerir.common.so
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
+vendor/lib/libkmsetkey.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
+vendor/lib64/libkmsetkey.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
@@ -1553,7 +1555,6 @@ vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc
 vendor/lib/nfc_nci.nqx.default.hw.v1.so
 vendor/lib/vendor.nxp.hardware.nfc@2.0.so
 vendor/lib64/nfc_nci.nqx.default.hw.v1.so
-vendor/lib64/se_nq_extn_client-v1.so
 vendor/lib64/vendor.nxp.hardware.nfc@2.0.so
 
 # NFC configs
@@ -1584,6 +1585,21 @@ vendor/etc/sn100u_pnx_sst.pnscr
 
 # Payment (IFAA)
 product/app/IFAAService/IFAAService.apk
+
+# Fido
+vendor/lib/libmfido_mitee.so
+vendor/lib64/libmfido_mitee.so
+
+# Mlipay
+vendor/lib/libmlipay_mitee.so
+vendor/lib/libmlipay_mitee@1.1.so
+vendor/lib64/libmlipay_mitee.so
+vendor/lib64/libmlipay_mitee@1.1.so
+
+# Mtdservice
+vendor/lib/libmt_mitee.so
+vendor/lib64/libmt_mitee.so
+vendor/lib64/libmt_mitee@1.3.so
 
 # Payment (Xiaomi)
 vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-miteeservice.rc
@@ -1705,6 +1721,11 @@ vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
 # Secure element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
 vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
+vendor/lib/libmigpese@1.0.so
+vendor/lib64/jcos_nq_client-v1.so
+vendor/lib64/libmigpese@1.0.so
+vendor/lib64/ls_nq_client-v1.so
+vendor/lib64/se_nq_extn_client-v1.so
 
 # Security
 vendor/bin/hw/android.hardware.security.keymint@1.0-service.mitee
@@ -2217,8 +2238,8 @@ vendor/bin/eara_io_service
 vendor/bin/em_hidl
 vendor/bin/factory
 vendor/bin/ffu
-vendor/bin/fidoca_mitee
 vendor/bin/fpsgo
+vendor/bin/fidoca_mitee
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram
 vendor/bin/gbe
@@ -3707,7 +3728,6 @@ vendor/lib/libimgsys_wpe.so
 vendor/lib/libipsec_ims_shr.so
 vendor/lib/liblogwrap_vendor.so
 vendor/lib/libmediautils_vendor.so
-vendor/lib/libmfido_mitee.so
 vendor/lib/libmigpese@1.0.so
 vendor/lib/libminiui.so
 vendor/lib/libmisound.so
@@ -3719,7 +3739,6 @@ vendor/lib/libmnetlink_v104.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libmsbc_mtk.so
-vendor/lib/libmt_mitee.so
 vendor/lib/libmtk_bsg.so
 vendor/lib/libmtkares.so
 vendor/lib/libmtklimiter_vendor.so
@@ -3915,7 +3934,6 @@ vendor/lib64/com.xiaomi.plugin.superlowlight.so
 vendor/lib64/com.xiaomi.plugin.supernight.so
 vendor/lib64/com.xiaomi.plugin.swflip.so
 vendor/lib64/com.xiaomi.plugin.tetrassr.so
-vendor/lib64/jcos_nq_client-v1.so
 vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/lib3a.af.assist.models1d.so
 vendor/lib64/lib3a.af.assist.models2d.so
@@ -4054,7 +4072,6 @@ vendor/lib64/libkmsetkey.so
 vendor/lib64/liblogwrap_vendor.so
 vendor/lib64/libmdla_ut.so
 vendor/lib64/libmediautils_vendor.so
-vendor/lib64/libmfido_mitee.so
 vendor/lib64/libmiai_deblur.so
 vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmialgo_ie_capture.so
@@ -4066,15 +4083,11 @@ vendor/lib64/libmipc.so
 vendor/lib64/libmiphone_capture_bokeh.so
 vendor/lib64/libmisound.so
 vendor/lib64/libmisoundcrossfade.so
-vendor/lib64/libmlipay_mitee.so
-vendor/lib64/libmlipay_mitee@1.1.so
 vendor/lib64/libmmagent.so
 vendor/lib64/libmmprofile.so
 vendor/lib64/libmnetlink_v104.so
 vendor/lib64/libmnl.so
 vendor/lib64/libmsbc_mtk.so
-vendor/lib64/libmt_mitee.so
-vendor/lib64/libmt_mitee@1.3.so
 vendor/lib64/libmtk-fusion-ril-prop-vsim.so
 vendor/lib64/libmtk-ril.so
 vendor/lib64/libmtk_bsg.so
@@ -4227,6 +4240,13 @@ vendor/lib64/vendor.xiaomi.hidl.miwill@1.0.so
 vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so
 vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
 vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so
+vendor/res/images/lcd_test_00.png
+vendor/res/images/lcd_test_01.png
+vendor/res/images/lcd_test_02.png
+vendor/res/sound/ringtone.wav
+vendor/res/sound/testpattern1.wav
+
+# Trustlets
 vendor/mitee/ta/14b0aad8-c011-4a3f-b66aca8d0e66f273.ta
 vendor/mitee/ta/2e8fade5-0c7a-46cc-810e6468baee66b9.ta
 vendor/mitee/ta/377ee4e8-af0e-474f-a9d636a9268fe85c.ta
@@ -4240,8 +4260,3 @@ vendor/mitee/ta/8aaaf201-2460-0000-7143fe4f7c823c80.ta
 vendor/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta
 vendor/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta
 vendor/mitee/ta/f13010e0-2ae1-11e5-896a0002a5d5c51d.ta
-vendor/res/images/lcd_test_00.png
-vendor/res/images/lcd_test_01.png
-vendor/res/images/lcd_test_02.png
-vendor/res/sound/ringtone.wav
-vendor/res/sound/testpattern1.wav

@@ -1337,9 +1337,31 @@ vendor/lib64/hw/gatekeeper.mitee.so
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
+vendor/bin/mnld
+vendor/bin/mtk_agpsd
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
+vendor/etc/init/init.gps_drv.rc
+vendor/etc/init/init.gps_pwr.rc
+vendor/etc/init/init.gps_scp.rc
+vendor/etc/init/mtk_agpsd_p.rc
+vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk.xml
+vendor/etc/vintf/manifest/gnss@2.1-service.xml
+vendor/etc/slp_conf
+vendor/lib/hw/android.hardware.gnss-impl-mediatek.so
+vendor/lib/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib/hw/gps.default.so
+vendor/lib/mt6895/libDR.so;SYMLINK=vendor/lib64/libDR.so
+vendor/lib/mt6895/libmnl.so;SYMLINK=vendor/lib64/libmnl.so
+vendor/lib/librpc.so
+vendor/lib/libviagpsrpc.so
+vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
+vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
+vendor/lib64/mt6895/libDR.so;SYMLINK=vendor/lib64/libDR.so
+vendor/lib64/mt6895/libmnl.so;SYMLINK=vendor/lib64/libmnl.so
+vendor/lib64/librpc.so
+vendor/lib64/libviagpsrpc.so
+
 
 # GNSS configs
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
@@ -1634,6 +1656,36 @@ vendor/lib64/librilfusion.so
 vendor/lib64/libsysenv.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
+
+# IMS
+system_ext/bin/vtservice
+system_ext/etc/init/init.vtservice.rc
+system_ext/framework/mediatek-common.jar:framework/mediatek-common.jar
+system_ext/framework/mediatek-framework.jar:framework/mediatek-framework.jar
+system_ext/framework/mediatek-ims-base.jar:framework/mediatek-ims-base.jar
+system_ext/framework/mediatek-ims-common.jar:framework/mediatek-ims-common.jar
+system_ext/framework/mediatek-ims-extension-plugin.jar:framework/mediatek-ims-extension-plugin.jar
+system_ext/framework/mediatek-telecom-common.jar:framework/mediatek-telecom-common.jar
+system_ext/framework/mediatek-telephony-base.jar:framework/mediatek-telephony-base.jar
+system_ext/framework/mediatek-telephony-common.jar:framework/mediatek-telephony-common.jar
+system_ext/lib/libmtk_vt_wrapper.so
+system_ext/lib/libvcodec_cap.so
+system_ext/lib/libvcodec_capenc.so
+system_ext/lib64/libcomutils.so
+system_ext/lib64/libimsma.so
+system_ext/lib64/libimsma_adapt.so
+system_ext/lib64/libimsma_rtp.so
+system_ext/lib64/libimsma_socketwrapper.so
+system_ext/lib64/libmtk_vt_service.so
+system_ext/lib64/libmtk_vt_wrapper.so
+system_ext/lib64/libsignal.so
+system_ext/lib64/libsink.so
+system_ext/lib64/libsource.so
+system_ext/lib64/libvcodec_cap.so
+system_ext/lib64/libvcodec_capenc.so
+system_ext/lib64/libvt_avsync.so
+vendor/bin/hw/vtservice_hidl
+vendor/etc/init/init.vtservice_hidl.rc
 
 # Radio (IMS)
 system_ext/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so

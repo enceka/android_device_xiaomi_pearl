@@ -1347,11 +1347,7 @@ vendor/etc/init/mtk_agpsd_p.rc
 vendor/etc/vintf/manifest/gnss-default.xml:vendor/etc/vintf/manifest/gnss-mtk.xml
 vendor/etc/vintf/manifest/gnss@2.1-service.xml
 vendor/etc/slp_conf
-vendor/lib/hw/android.hardware.gnss-impl-mediatek.so
-vendor/lib/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib/hw/gps.default.so
-vendor/lib/mt6895/libDR.so;SYMLINK=vendor/lib64/libDR.so
-vendor/lib/mt6895/libmnl.so;SYMLINK=vendor/lib64/libmnl.so
 vendor/lib/librpc.so
 vendor/lib/libviagpsrpc.so
 vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
@@ -1408,7 +1404,6 @@ vendor/lib64/hw/consumerir.common.so
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
-vendor/lib/libkmsetkey.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
@@ -3868,7 +3863,6 @@ vendor/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@1.1-impl.so
 vendor/lib64/mt6895/lib3a.af.assist.models1d.so
 vendor/lib64/mt6895/lib3a.af.assist.models2d.so
-vendor/lib64/mt6895/libDR.so
 vendor/lib64/mt6895/libaal_cust_func.so
 vendor/lib64/mt6895/libacdk.so
 vendor/lib64/mt6895/libaiawb_fs_model.so
@@ -3900,7 +3894,6 @@ vendor/lib64/mt6895/libimgsys_traw.so
 vendor/lib64/mt6895/libimgsys_utils.so
 vendor/lib64/mt6895/libimgsys_wpe.so
 vendor/lib64/mt6895/libmdla_ut.so
-vendor/lib64/mt6895/libmnl.so
 vendor/lib64/mt6895/libmtkcam.logicalmodule.so
 vendor/lib64/mt6895/libmtkcam_modulefactory_custom.so
 vendor/lib64/mt6895/libmtkcam_modulefactory_utils.so
@@ -3937,7 +3930,6 @@ vendor/lib64/com.xiaomi.plugin.tetrassr.so
 vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/lib3a.af.assist.models1d.so
 vendor/lib64/lib3a.af.assist.models2d.so
-vendor/lib64/libDR.so
 vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libHalSuperSensorServerCWrapper.so
 vendor/lib64/libMtkSpeechEnh.so

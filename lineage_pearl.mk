@@ -11,14 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from generic device
-$(call inherit-product, device/xiaomi/generic/device.mk)
+# Inherit from pearl device
+$(call inherit-product, device/xiaomi/pearl/device.mk)
 
-PRODUCT_DEVICE := generic
-PRODUCT_NAME := lineage_generic
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := mainline
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_DEVICE := pearl
+PRODUCT_NAME := lineage_pearl
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := 23054RA19C
+PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

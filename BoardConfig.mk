@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/generic
+DEVICE_PATH := device/xiaomi/pearl
 
 # A/B
 AB_OTA_UPDATER := true
@@ -37,8 +37,8 @@ TARGET_SCREEN_DENSITY := 440
 BOARD_BOOTIMG_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image
-TARGET_KERNEL_CONFIG := generic_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/generic
+TARGET_KERNEL_CONFIG := pearl_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/pearl
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -79,4 +79,4 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
-include vendor/xiaomi/generic/BoardConfigVendor.mk
+include vendor/xiaomi/pearl/BoardConfigVendor.mk
